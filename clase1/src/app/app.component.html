@@ -1,0 +1,16 @@
+<div style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 16px;">
+  <h1>Santiago Iannello</h1>
+  <div style="width: 20%; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+    <input type="number" placeholder="Edad 1" [(ngModel)]="edadUno" style="border-radius: 5px; height: 30px; width: 98%; border-width: 1px;">
+    <input type="number" placeholder="Edad 2" [(ngModel)]="edadDos" style="border-radius: 5px; height: 30px; width: 98%; border-width: 1px;">
+    <button (click)="calcular()" style="width: 100%; background-color: darkblue; color: white; border-radius: 5px; border: 0px; height: 30px;;">Calcular</button>
+    <button (click)="limpiar()" style="width: 100%; background-color: darkblue; color: white; border-radius: 5px; border: 0px; height: 30px;;">Limpiar</button>
+  </div>
+  <div>
+    <p>Resultados</p>
+    <p>Suma: {{suma}}</p>
+    <p>Promedio: {{promedio}}</p>
+  </div>
+</div>
+
+<router-outlet />
